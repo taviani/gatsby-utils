@@ -1,0 +1,36 @@
+{
+  "name": "@taviani/utils",
+  "description": "Utilities to build themes",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Taviani",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "package:build": "tsup",
+    "package:watch": "yarn package:build --watch",
+    "prepare": "yarn package:build"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash.kebabcase": "^4.1.7",
+    "tsup": "^6.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taviani/gatsby-utils.git",
+    "directory": "utils"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  }
+}
